@@ -1,0 +1,24 @@
+api_list_shifts:
+  path: /shifts
+  controller: App\Controller\ApiController::listShifts
+  methods: [GET]
+
+api_create_shift:
+  path: /shift
+  controller: App\Controller\ApiController::createShift
+  methods: [POST]
+
+api_view_shift:
+  path: /shift/{shiftId}
+  controller: App\Controller\ApiController::viewShift
+  methods: [GET]
+
+api_edit_shift:
+  path: /shift/{shiftId}
+  controller: App\Controller\ApiController::editShift
+  methods: [PUT]
+
+api_delete_shift:
+  path: /shift/{shiftId}
+  controller: App\Controller\ApiController::deleteShift
+  methods: [DELETE]
